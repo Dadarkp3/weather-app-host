@@ -77,6 +77,7 @@ export default withZephyr()({
   plugins: [
     new rspack.HtmlRspackPlugin({
       template: "./index.html",
+      favicon: "./favicon.ico",
     }),
     new ModuleFederationPlugin(mfConfig),
     isDev ? new RefreshPlugin() : null,
