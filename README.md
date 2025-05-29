@@ -84,7 +84,6 @@ Got it! Here’s the updated section you can add to both `README.md` files to in
 
 ### 📸 App Preview
 ![Captura de Tela 2025-05-29 às 09 47 35](https://github.com/user-attachments/assets/0abc483a-6793-4a96-ad73-b264c99b3df9)
-![Captura de Tela 2025-05-29 às 13 31 42](https://github.com/user-attachments/assets/684745ef-02c2-470c-96c1-d4a23a88172d)
 ![Captura de Tela 2025-05-29 às 15 01 42](https://github.com/user-attachments/assets/b482e1c1-6359-4707-bcfc-f9644d8ea40e)
 ![Captura de Tela 2025-05-29 às 15 01 59](https://github.com/user-attachments/assets/da4f5043-aa9b-4e83-98ed-1386911fe901)
 ![Captura de Tela 2025-05-29 às 15 09 22](https://github.com/user-attachments/assets/f5c8214a-758e-4291-87e0-801fe646d2c5)
