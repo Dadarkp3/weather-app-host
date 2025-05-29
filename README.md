@@ -83,12 +83,13 @@ Got it! Here’s the updated section you can add to both `README.md` files to in
 ---
 
 ### 📸 App Preview
-![Captura de Tela 2025-05-29 às 09 47 35](https://github.com/user-attachments/assets/0abc483a-6793-4a96-ad73-b264c99b3df9)
-![Captura de Tela 2025-05-29 às 15 01 42](https://github.com/user-attachments/assets/b482e1c1-6359-4707-bcfc-f9644d8ea40e)
-![Captura de Tela 2025-05-29 às 15 01 59](https://github.com/user-attachments/assets/da4f5043-aa9b-4e83-98ed-1386911fe901)
-![Captura de Tela 2025-05-29 às 15 09 22](https://github.com/user-attachments/assets/f5c8214a-758e-4291-87e0-801fe646d2c5)
-![Captura de Tela 2025-05-29 às 15 09 30](https://github.com/user-attachments/assets/0edd7b9e-dde8-4ff6-a988-2fe393cea913)
-![Captura de Tela 2025-05-29 às 15 09 49](https://github.com/user-attachments/assets/03a2a66d-889a-4009-a051-62de5d642b9d)
-![Captura de Tela 2025-05-29 às 15 10 17](https://github.com/user-attachments/assets/48bf3e63-12e2-41f5-9743-d9c6653b8c5d)
+
+![Captura de Tela 2025-05-29 às 15 26 28](https://github.com/user-attachments/assets/0d7d7bf9-fd84-468e-9ab3-050d4e0b9e62)
+![Captura de Tela 2025-05-29 às 15 32 38](https://github.com/user-attachments/assets/e7c56084-7a48-461a-8f2b-52f64298d2e3)
+![Captura de Tela 2025-05-29 às 15 45 31](https://github.com/user-attachments/assets/be76af37-6ee9-42b0-a575-854f5a95a52f)
+![Captura de Tela 2025-05-29 às 15 45 40](https://github.com/user-attachments/assets/317c91f7-5ccd-4671-a7f9-d6c83582bab9)
+![Captura de Tela 2025-05-29 às 15 45 53](https://github.com/user-attachments/assets/515ef785-57e6-424d-8103-53810a5c83c8)
+![Captura de Tela 2025-05-29 às 15 46 07](https://github.com/user-attachments/assets/f21a7eed-11d4-42a5-bb2e-5a862d7ee365)
+![Captura de Tela 2025-05-29 às 15 46 25](https://github.com/user-attachments/assets/ab8751ef-ecd1-4dd3-b392-7b5d2e7c2330)
 
 
