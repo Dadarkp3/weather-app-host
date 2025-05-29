@@ -44,6 +44,10 @@ export default withZephyr()({
         type: "asset",
       },
       {
+        test: /\.(png|jpe?g|gif|webp|svg)$/i,
+        type: "asset/resource",
+      },
+      {
         test: /\.css$/,
         use: ["postcss-loader"],
         type: "css",
@@ -77,7 +81,6 @@ export default withZephyr()({
   plugins: [
     new rspack.HtmlRspackPlugin({
       template: "./index.html",
-      favicon: "./favicon.ico",
     }),
     new ModuleFederationPlugin(mfConfig),
     isDev ? new RefreshPlugin() : null,
