@@ -39,10 +39,11 @@ jobs:
 
       # Faz o deploy para o Zephyr
       - name: Zephyr deploy
-        uses: zephyr-cloud/actions@v1 # Usa a ação oficial do Zephyr
-        id: zephyr-summary
-        with:
-          application_uid: shared-ui-remote.shared-ui-remote.dadarkp3 # UID da sua aplicação Zephyr (substitua pelo seu se for diferente)
-          github_token: ${{ secrets.GITHUB_TOKEN }} # Token padrão do GitHub para interações com o GitHub
-          zephyr_token: ${{ secrets.ZEPHYR_AUTH_TOKEN }} # Token de autenticação para o Zephyr (armazenado como um secret)
-          github_environment: Production # Nome do ambiente GitHub (opcional)
+        env:
+          ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_AUTH_TOKEN }} # Token de autenticação para o Zephyr
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token padrão do GitHub (caso o Zephyr use para GitHub integrations)
+        run: |
+          npx @zephyrcloud/cli deploy \
+          --application_uid weather-app-host.weather-app-host.dadarkp3 \
+          --path dist \
+          --github_environment Production
