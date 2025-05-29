@@ -39,7 +39,7 @@ jobs:
 
       # Faz o deploy para o Zephyr
       - name: Zephyr deploy
-        uses: ZephyrCloudIO/zephyr-action@v1 # Usa a ação oficial do Zephyr
+        uses: zephyr-cloud/actions@v1 # Usa a ação oficial do Zephyr
         id: zephyr-summary
         with:
           application_uid: shared-ui-remote.shared-ui-remote.dadarkp3 # UID da sua aplicação Zephyr (substitua pelo seu se for diferente)
