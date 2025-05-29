@@ -26,9 +26,11 @@
   "dependencies": {
     "@module-federation/enhanced": "^0.8.9",
     "actions@v1": "link:zephyr-cloud/actions@v1",
+    "lucide-react": "^0.511.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.1",
-    "zephyr-rspack-plugin": "^0.0.32"
+    "zephyr-rspack-plugin": "^0.0.32",
+    "zustand": "^5.0.5"
   }
 }
