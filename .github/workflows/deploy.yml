@@ -1,0 +1,48 @@
+name: Deploy to Zephyr
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  NODE_VERSION: 22 # Define a versão do Node.js a ser usada
+
+jobs:
+  deploy-on-main:
+    runs-on: ubuntu-latest # Define o ambiente de execução
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # Faz o checkout do seu código do repositório
+
+      # Configura o Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }} # Usa a versão definida na variável de ambiente
+
+      # Instala as dependências usando pnpm
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.6.3 # Versão do pnpm a ser usada
+          run_install: false # Não executa 'pnpm install' automaticamente aqui
+      - name: Install dependencies
+        run: pnpm i # Executa a instalação das dependências
+
+      # Executa o script de build da sua aplicação (assumindo 'pnpm run build')
+      - name: Run CI build
+        id: build
+        env:
+          # ZE_SECRET_TOKEN é passado para o ambiente do script de build, se ele precisar
+          ZE_SECRET_TOKEN: ${{ secrets.ZEPHYR_AUTH_TOKEN }}
+        run: pnpm run build
+
+      # Faz o deploy para o Zephyr
+      - name: Zephyr deploy
+        uses: ZephyrCloudIO/zephyr-action@v1 # Usa a ação oficial do Zephyr
+        id: zephyr-summary
+        with:
+          application_uid: shared-ui-remote.shared-ui-remote.dadarkp3 # UID da sua aplicação Zephyr (substitua pelo seu se for diferente)
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Token padrão do GitHub para interações com o GitHub
+          zephyr_token: ${{ secrets.ZEPHYR_AUTH_TOKEN }} # Token de autenticação para o Zephyr (armazenado como um secret)
+          github_environment: Production # Nome do ambiente GitHub (opcional)

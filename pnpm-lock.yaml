@@ -11,6 +11,9 @@ importers:
       '@module-federation/enhanced':
         specifier: ^0.8.9
         version: 0.8.12(@rspack/core@1.2.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)(webpack@5.99.9(esbuild@0.17.19))
+      actions@v1:
+        specifier: link:zephyr-cloud/actions@v1
+        version: link:zephyr-cloud/actions@v1
       react:
         specifier: ^19.0.0
         version: 19.1.0
