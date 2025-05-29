@@ -1,3 +1,3 @@
 
-    export type RemoteKeys = 'shared_ui_remote/Navbar';
-    type PackageType<T> = T extends 'shared_ui_remote/Navbar' ? typeof import('shared_ui_remote/Navbar') :any;
+    export type RemoteKeys = 'shared_ui_remote/Navbar' | 'shared_ui_remote/Paragraph' | 'shared_ui_remote/Title' | 'shared_ui_remote/Container' | 'shared_ui_remote/Input' | 'shared_ui_remote/Button' | 'shared_ui_remote/Card';
+    type PackageType<T> = T extends 'shared_ui_remote/Card' ? typeof import('shared_ui_remote/Card') :T extends 'shared_ui_remote/Button' ? typeof import('shared_ui_remote/Button') :T extends 'shared_ui_remote/Input' ? typeof import('shared_ui_remote/Input') :T extends 'shared_ui_remote/Container' ? typeof import('shared_ui_remote/Container') :T extends 'shared_ui_remote/Title' ? typeof import('shared_ui_remote/Title') :T extends 'shared_ui_remote/Paragraph' ? typeof import('shared_ui_remote/Paragraph') :T extends 'shared_ui_remote/Navbar' ? typeof import('shared_ui_remote/Navbar') :any;
