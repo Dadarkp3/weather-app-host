@@ -34,13 +34,13 @@ jobs:
         id: build
         env:
           # ZE_SECRET_TOKEN é passado para o ambiente do script de build, se ele precisar
-          ZE_SECRET_TOKEN: ${{ secrets.ZEPHYR_AUTH_TOKEN }}
+          ZE_SECRET_TOKEN: ${{ secrets.ZE_SECRET_TOKEN }}
         run: pnpm run build
 
       # Faz o deploy para o Zephyr
       - name: Zephyr deploy
         env:
-          ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_AUTH_TOKEN }} # Token de autenticação para o Zephyr
+          ZEPHYR_TOKEN: ${{ secrets.ZE_SECRET_TOKEN }} # Token de autenticação para o Zephyr
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token padrão do GitHub (caso o Zephyr use para GitHub integrations)
         run: |
           npx @zephyrcloud/cli deploy \
