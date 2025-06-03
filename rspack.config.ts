@@ -30,7 +30,7 @@ export default withZephyr()({
     // You need to set a unique value that is not equal to other applications
     uniqueName: "weather_app_host",
     // publicPath must be configured if using manifest
-    publicPath: "http://localhost:8080/",
+    publicPath: isDev ? "http://localhost:8080/" : "auto",
   },
 
   experiments: {
